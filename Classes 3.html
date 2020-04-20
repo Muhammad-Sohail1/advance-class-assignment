@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	
+</body>
+<script>
+
+		// Example 3
+
+	class Cnc{
+		constructor(name,ag,fee){
+			
+			this.First_name = name;
+			this.Age = ag;
+			this.Cost = fee;
+			this.fun = function(){
+				if(this.First_name === "sohail" && this.Age === 24 && this.Cost === 90000){
+					return "sab ok h bhai"
+				}else{
+					return "no matched"		
+					}
+			}
+
+		}
+
+		proto(){
+			return "Prototype Member";
+		}
+	}
+			var obj = new Cnc("sohail",24,90000);
+			console.log(obj.proto())
+
+			var finalrun = obj.fun()
+			console.log(finalrun)
+
+		
+</script>
+</html>

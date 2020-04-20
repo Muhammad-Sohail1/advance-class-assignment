@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	
+</body>
+<script>
+
+	// First example of prototype inheritance 
+
+	function First(){
+		this.Name = "Sohail";
+	}
+
+	First.prototype.color = "Black";
+	Second.prototype = Object.create(First.prototype);
+	Second.prototype.constructor = Second;
+    Second.prototype.color = "blue"
+	First.prototype.color = "SkyBlue" // replace property
+	function Second(){
+		First.call(this);
+		this.Age = 63;
+	}
+
+	var obj = new Second();
+	var obj2 = new First()
+	console.log(obj.color);
+	console.log(obj2.color);
+
+
+
+
+
+
+
+
+
+	        //   Second Example Use extends keyword not a prototype Commnd
+class One{
+	constructor(){
+		this.Name = "sohail";
+	}
+	func(){
+		return "First Class";
+	}
+}
+		One.prototype.color = "white";
+
+
+class Two extends One{
+	constructor(){
+		super()
+		
+		this.age = 63;
+	}
+
+	fun(){
+		return "Memon";
+	}
+}
+
+var obj = new Two();
+console.log(obj.color)
+
+
+
+
+
+
+</script>
+</html>

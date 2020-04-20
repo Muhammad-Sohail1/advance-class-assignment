@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	
+</body>
+<script>
+
+		// Example 3
+
+   class First{
+	   fir(){
+		   return "First Class <br>";
+	   }
+   }
+
+   		class Second extends First{
+			   sec(){
+				   return "Second Class";
+			   }
+		   }
+
+		   class third extends Second{
+				show(){
+					return "Third Class Grand child"
+				}
+		   }
+		   		var obj1 = new third();
+				   document.write(obj1.fir());
+				   document.write(obj1.sec());
+				   document.write(obj1.show());
+
+
+</script>
+</html>

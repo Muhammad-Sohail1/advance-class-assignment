@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	
+</body>
+<script>
+
+		// Example 1 
+
+	class Cnc{
+		constructor(name,ag,fee){
+			
+			this.First_name = name;
+			this.Age = ag;
+			this.Cost = fee;
+			this.fun = function(){
+				return "Another Method"
+			}
+
+		}
+
+		proto(){
+			return "Prototype Member";
+		}
+	}
+		var obj1 = new Cnc("Sohail Memon",24,3000);
+		console.log(obj1,obj1.proto())
+
+		var obj1 = new Cnc("Sohail",25,300000);
+		console.log(obj1,obj1.fun())
+		
+</script>
+</html>

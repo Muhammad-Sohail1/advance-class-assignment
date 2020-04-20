@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	
+</body>
+<script>
+
+	class First{
+		constructor(age){
+			this.age = age;
+			this.First_Name = "Sohail Memon";
+			this.Address = "Address..................!"
+		}
+	}
+
+	class Second extends First{
+		constructor(age){
+			super(age);
+		}
+	}
+
+	var obj1 = new Second(24);
+	console.log(obj1);
+
+	class Third extends First{
+		constructor(age){
+			super(age);
+		}
+	}
+
+    var obj2 = new Third(63);
+	console.log(obj2)
+
+	class Fourth extends First{
+		constructor(age){
+			super(age);
+		}
+	}
+
+	var obj3 = new Fourth(49);
+	console.log(obj3)
+
+
+
+
+
+
+
+</script>
+</html>
